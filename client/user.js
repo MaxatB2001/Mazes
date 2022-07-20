@@ -21,6 +21,7 @@ regButton.addEventListener("click", () => {
     const btn = modal.querySelector("button");
     btn.innerText = 'Регистрация'
     modalBg.classList.add("bg-active");
+    submitBtn.removeEventListener("click", submitLogin)
     submitBtn.addEventListener("click", submitRegistration);
 })
 
@@ -30,6 +31,7 @@ logButton.addEventListener("click" , () => {
     const btn = modal.querySelector("button");
     btn.innerText = 'Войти'
     modalBg.classList.add("bg-active");
+    submitBtn.removeEventListener("click", submitRegistration)
     submitBtn.addEventListener("click", submitLogin);
 })
 

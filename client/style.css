@@ -66,12 +66,17 @@ canvas {
 	align-items: center;
 	border-radius: 6px;
 	position: relative;
+	padding: 10px;
 }
 
 .modal > input {
 	padding: 5px;
 	border-radius: 4px;
 	border-color: #2980b9;
+}
+
+.modal > button {
+	margin-top: 5px;
 }
 
 .modal-close {
